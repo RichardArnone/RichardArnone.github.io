@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Richard Arnone - Start Your Engines</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="../js/jquery-2.2.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+        
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    
+    <body>
+
+    	<header>
+			<div class="navContain">
+			<a href="../index.html"><img class="logo" src="../images/name.PNG" alt="Rchard Arnone" width="100px"/></a>
+    		<nav id="myNav" class="overlay">  			
+    			<div class="overlay-content">
+    				<a href="../index.html">HOME</a>
+					<a href="../about.html">ABOUT</a>
+					<a href="../work.html">WORK</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    			</div>
+    		</nav>
+    		<span style="color: white" onclick="openNav()"><img id="hamburger" src="../images/hamburger.png" alt="Nagivation Menu" width="20px" /></span>
+            <a href="mailto: richard_arnone@live.com"><img id="mail" src="../images/mail.png" alt="Contact Me" width="20px" /></a>
+			</div>
+    	</header>
+		
+			<section class="expandedWork-blurbs">
+				<div class="blurb">
+					<h1>Start Your Engines</h1>
+					<div class="viewAllButton">
+						<a class="textButton" href="../work.html">ALL WORK</a>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo lectus, scelerisque id fringilla sed, hendrerit ut mi. Sed nunc mi, posuere nec metus at, ullamcorper hendrerit nulla. Nulla placerat scelerisque nunc, et congue purus varius in. Maecenas fermentum magna turpis, ut aliquam orci consectetur et. Aliquam in viverra augue. Fusce venenatis dolor in nibh bibendum, nec pulvinar quam condimentum. Praesent bibendum ligula at lectus volutpat molestie. Praesent sed aliquam nunc. Nullam ut volutpat elit.</p>
+					<div class="mediums">
+						<h1>Tools Used:</h1>
+						<img src="../images/mediums/indesign.jpg" alt="InDesign" />
+						<img src="../images/mediums/photoshop.jpg" alt="Photoshop" />
+					</div>
+				</div>
+			</section>
+		
+			<section class="expandedWork-images">
+				<img src="../images/expanded/lexus/cpo2.jpg" alt="Certified pre-owned offer" />
+			</section>
+		
+			<section class="expandedWork-images">
+				<div class="hideme"><img src="../images/expanded/lexus/serviceOffer2.jpg" alt="Service offer" /></div>
+				<div class="hideme"><img src="../images/expanded/lexus/dangler2.jpg" alt="Mirror dangler" /></div>
+				<div class="hideme"><img src="../images/expanded/lexus/invite2.jpg" alt="Invitation" /></div>
+				<div class="hideme"><img src="../images/expanded/lexus/billboard.jpg" alt="Billboard Ad" /></div>
+			</section>
+		
+			<section class="expandedWork-blurbs">
+				<div class="blurb">
+					<div class="projectsButton">
+						<a class="textButton" href="animating-holiday-cheer.html">&#171; PREVIOUS</a>
+					</div>
+					
+					<div class="projectsButton">
+						<a class="textButton" href="guiding-the-drive.html">NEXT &#187;</a>
+					</div>
+				</div>
+			</section>
+				
+    	<footer id="footer">
+			<p>&copy; Richard Arnone 2018<br><span style="font-weight: 400; font-size: 10px;">Design. Code. Repeat.</span></p>
+    	</footer>
+    	
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+			}
+
+			/* Close */
+			function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+			}
+		</script>
+    </body>
+</html>

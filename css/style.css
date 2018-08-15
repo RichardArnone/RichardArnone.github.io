@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900');
+/* CSS RESET BEGINS */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* CSS RESET ENDS */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+html{
+	
+}
+/* Body tag styling and positioning. */
+body{
+	background-color: black;
+	font-family: 'Kanit', sans-serif;
+}
+/* Website container tag. */
+header{
+	height: 50px;
+}
+/* Navigation container tag. */
+nav{
+	
+}
+.navContain{
+	padding: 20px 30px 10px 30px;
+	position: fixed;
+	min-height: 50px;
+	z-index: 10;
+	background-color: rgba(0,0,0,.9);
+	width: 100%;
+	transition: 0.35s all ease;
+}
+.scrolled{
+	min-height: 10px;
+	background: red;
+	transition: 0.35s all ease;
+}
+/* Navigation menu hamburger icon positioning. */
+#hamburger{
+	float: right;
+    cursor: pointer;
+	transition: 0.5s;
+}
+#hamburger:hover{
+	opacity: 0.7;
+	transition: 0.5s;
+}
+#mail{
+	float: right;
+    cursor: pointer;
+	margin: 0px 25px 0px 0px;
+	transition: 0.5s;
+}
+#mail:hover{
+	opacity: 0.7;
+	transition: 0.5s;
+}
+.logo{
+	
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+	font-weight: 500;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    margin-top: 20px;
+    font-size: 50px;
+	font-weight: 100;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#intro{
+	padding: 20px;
+	height: 100vh;
+	position: relative;
+	border-bottom: 1px solid white;
+}
+#title{
+	position: absolute;
+  	top: 50%;
+	left: auto;
+	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+#name{
+	animation: grow 3s;
+	width: 300px;
+	margin-bottom: 50px;
+}
+@-webkit-keyframes grow {
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@keyframes grow {
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@-webkit-keyframes peekaboo {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes peekaboo {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+#description{
+	-webkit-animation: peekaboo 7s;
+	animation: peekaboo 7s;
+	color: white;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+}
+#description h1{
+	margin-bottom: 10px;
+}
+#exploreButton{
+	-webkit-animation: peekaboo 7s;
+	animation: peekaboo 7s;
+	padding-top: 50px;
+	text-align: center;
+}
+#explore{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	background-color: Transparent;
+	border: solid 1px white;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Kanit', sans-serif;
+	letter-spacing: 2.5px;
+	padding: 15px;
+	width: 110px;
+	transition: all 0.7s;
+	cursor: pointer;
+}
+
+#explore:hover {
+	background-color: white;
+	color: black;
+}
+#gifButtons{
+	height: auto;
+	position: relative;
+	background-color: black;
+	border-bottom: 1px solid white;
+}
+#gifButtons:focus{
+	outline: none;
+}
+#experience{
+	height: auto;
+	position: relative;
+	border-bottom: 1px solid white;
+}
+#experience:focus{
+	outline: none;
+}
+#options{
+	margin: 0 auto;
+	padding: 30px 0px;
+	max-width: 300px;
+}
+#about{
+	max-width: 300px;
+	height: 300px;
+	display: block;
+	background: #222222;
+	background-image: url(../images/1.jpg);
+	margin-bottom: 30px;
+}
+#about h1{
+	color: white;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+#work{
+	max-width: 300px;
+	height: 300px;
+	display: block;
+	background-image: url(../images/mobile/work/slowwork.gif);
+}
+#work h1{
+	color: white;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+#container{
+	min-height: 100%;
+}
+#main{
+	overflow: auto;
+}
+
+.gallery{
+	margin-top: 16px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.galleryItem{
+	width: 100%;
+	position: relative;
+}
+.galleryItem .galleryImage{
+	opacity: 1;
+}
+.galleryItem .galleryImage-caption{
+	opacity: 0.6;
+}
+.galleryItem .galleryImage-caption-text{
+	opacity: 1;
+}
+
+.galleryImage{
+	width: 100%;
+	display: block;
+}
+
+.galleryImage-caption{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+.galleryImage-caption-text{
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+@media only screen and (min-width: 33.75em){
+	.galleryItem{
+		flex-basis: 50%;
+	}
+}
+
+@media only screen and (min-width: 48em){
+	.galleryItem{
+		flex-basis: calc(100% / 3);
+	}
+	.galleryItem:hover{
+		cursor: pointer;
+	}
+	.gallery{
+		margin-top: 16px;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.galleryItem{
+		width: 100%;
+		position: relative;
+	}
+	.galleryItem .galleryImage{
+		opacity: 1;
+	}
+	.galleryItem .galleryImage-caption{
+		opacity: 0;
+	}
+	.galleryItem .galleryImage-caption-text{
+		opacity: 0;
+	}
+	.galleryItem:hover .galleryImage{
+		opacity: 1;
+	}
+	.galleryItem:hover .galleryImage-caption{
+		opacity: 0.8;
+	}
+	.galleryItem:hover .galleryImage-caption-text{
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.galleryItem{
+		flex-basis: calc(100% / 4);
+	}
+}
+
+.expandedWork-blurbs{
+	padding: 20px;
+	/*height: auto;
+	min-height:100%;
+	position: relative;
+	border-bottom: 1px solid white;*/
+}
+.expandedWork-images{
+	width: 100%;
+}
+.expandedWork-images img{
+	width: 100%;
+}
+.expandedWork-images video{
+	width: 90%;
+	height: auto;
+}
+.projectsButton{
+	display: inline;
+}
+.projectsButton:last-child{
+	float: right;
+}
+.labels{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-weight: 200;
+	font-size: 14px;
+}
+
+footer{
+	background-color: black;
+	position: relative;
+	height: 40px;
+	clear: both;
+}
+footer p{
+	margin-top: 20px;
+	color: white;
+	font-weight: 200;
+	font-size: 14px;
+	text-align: center;
+}
+#pageBackground{
+	background: url(../images/face.jpg) no-repeat right center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#bio{
+	/*background: url(../images/face.jpg) no-repeat right center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+	padding: 20px;
+	height: auto;
+	min-height:100%;
+	position: relative;
+	border-bottom: 1px solid white;
+}
+.aboutBlurb{
+	max-width: 1200px;
+	margin: 0 auto;
+	/*margin: 0 auto;*/
+}
+.aboutBlurb h1{
+	color: white;
+	font-weight: 400;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.aboutBlurb p{
+	color: white;
+	font-weight: 200;
+	line-height: 20px;
+}
+.blurb{
+	max-width: 1200px;
+	margin: 0 auto;
+	/*margin: 0 auto;*/
+}
+.blurb h1{
+	color: white;
+	font-weight: 400;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.blurb p{
+	color: white;
+	font-weight: 200;
+	line-height: 20px;
+}
+#skills{
+	padding: 20px;
+	height: auto;
+	min-height:100%;
+	position: relative;
+	border-bottom: 1px solid white;
+}
+.skillLeft h1, .skillRight h1{
+	color: white;
+	font-weight: 400;
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.skillLeft p, .skillRight p{
+	color: white;
+	font-weight: 200;
+	font-size: 13px;
+	line-height: 20px;
+}
+#skillContainer{
+	max-width: 1200px;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+.skillLeft{
+	max-width: 400px;
+	margin-bottom: 50px;
+}
+.skillRight{
+	max-width: 400px;
+	margin-bottom: 50px;
+}
+.underline{
+	border-bottom: 1px solid white;
+	margin: 10px auto;
+	padding-top: 10px;
+	width: 50px;
+}
+#timeline{
+	padding: 20px;
+	padding-top: 60px;
+	height: auto;
+	min-height:100%;
+	text-align: center;
+	max-width: 800px;
+	color: white;
+	margin: 0 auto;
+}
+#timeline h1{
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: white;
+}
+#timeline h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: white;
+	margin-bottom: 3px;
+}
+#timeline h3{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: white;
+	margin-bottom: 3px;
+}
+#timeline h4{
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: white;
+	margin-bottom: 3px;
+}
+#timeline p{
+	max-width: 500;
+	margin: 0 auto;
+	font-size: 9px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: white;
+	padding: 0px 20px;
+}
+.center{
+	max-width: 1px;
+	margin: 0 auto;
+}
+.line{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-left: 1px solid white;
+	height: 100px;
+}
+.workButton{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.viewAllButton{
+	padding-bottom: 20px;
+}
+.textButton{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	background-color: Transparent;
+	border: solid 1px white;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Kanit', sans-serif;
+	letter-spacing: 2.5px;
+	padding: 15px;
+	width: 125px;
+	transition: all 0.7s;
+	cursor: pointer;
+}
+.textButton:hover {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.mediums{
+	margin-top: 20px;
+}
+.mediums h1{
+	color: white;
+	font-size: 20px;
+}
+.mediums img{
+	margin-right: 5px;
+	width: 25px;
+}
+.hideme
+{
+    opacity:0;
+}
+.nextButton{
+	-webkit-animation: peekaboo 7s;
+	animation: peekaboo 7s;
+	margin-top: 100px;
+	text-align: center;
+}
+.nextArrow{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	background-color: Transparent;
+	border: solid 1px white;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Kanit', sans-serif;
+	letter-spacing: 2.5px;
+	padding: 15px;
+	width: 45px;
+	transition: all 0.7s;
+	cursor: pointer;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.nextArrow:hover {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+/* If screen size is 641px or smaller AND in landscape mode, do this: */
+@media screen and (max-width : 641px) and (orientation:landscape){
+	header{
+		height: 70px;
+	}
+	#intro{
+		height: 150vh;
+	}
+}
+/* If screen size is 850px or larger, do this: */
+@media screen and (min-width : 850px){
+	.skillLeft{
+		display: inline-block;
+		max-width: 400px;
+	}
+	.skillRight{
+		display: inline-block;
+		float: right;
+		max-width: 400px;
+	}
+	.expandedWork-images video{
+		width: 40%;
+		height: auto;
+	}
+}
+/* If screen size is 1059px or larger, do this: */
+@media screen and (max-width : 1059px){
+	#gifButtons{
+		background-color: black;
+	}
+	#experience{
+	}
+	.aboutBlurb{
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.blurb{
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+/* If screen size is 1060px or larger, do this: */
+@media screen and (min-width : 1060px){
+	#gifButtons{
+		background-color: black;
+		height: 100vh;
+		position: relative;
+	}
+	#experience{
+		
+	}
+	#bio{
+		height: 800px;
+		position: relative;
+	}
+	#options{
+		padding: 30px;
+		width: 100%;
+		max-width: 1200px;
+	}
+	#about{
+		width: 100%;
+		max-width: 500px;
+		height: 500px;
+		display: block;
+		float: left;
+		background: #222222;
+		position: absolute;
+		top: 50%;
+		right: 52%;
+		transform: translateY(-50%); 
+	}
+	#about:hover{
+		background-image: url(../images/test.gif);
+	}
+	.aboutBlurb{
+		padding-top: 200px;
+	}
+	#work{
+		width: 100%;
+		max-width: 500px;
+		height: 500px;
+		display: block;
+		float: right;
+		background: #222222;
+		position: absolute;
+		top: 50%;
+		left: 52%;
+		transform: translateY(-50%); 
+	}
+	#work:hover{
+		background-image: url(../images/workcolour.gif);
+	}
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Richard Arnone</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="js/jquery-2.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+
+    	<header>
+			<div class="navContain">
+    		<nav id="myNav" class="overlay">  			
+    			<div class="overlay-content">
+    				<a href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="work.html">WORK</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    			</div>
+    		</nav>   		
+    		<span style="color: white" onclick="openNav()"><img id="hamburger" src="images/hamburger.png" alt="Nagivation Menu" width="20px" /></span>
+            <a href="mailto: richard_arnone@live.com"><img id="mail" src="images/mail.png" alt="Contact Me" width="20px" /></a>
+			</div>
+    	</header>
+    	
+    	<section id="intro">
+    		<div id="title">
+    			<img id="name" src="images/name.png" alt="Richard Arnone"/>
+				
+				<div id="description">
+					<h1>Graphic Designer</h1>
+					<h1>Front-End Developer</h1>
+				</div>
+                
+                <div class="nextButton">
+					<a class="nextArrow" href="#gifButtons">&#187;</a>
+				</div>
+    		</div>
+    		
+    	</section>
+
+    	<section id="gifButtons">
+				<div id="options">
+					<a href="about.html"><div id="about">
+						<h1>ABOUT</h1>
+					</div></a>
+					
+					<a href="work.html"><div id="work">
+						<h1>WORK</h1>
+					</div></a>
+				</div>
+    	</section>
+    	
+    	<footer>
+			<p>&copy; Richard Arnone 2018<br><span style="font-weight: 400; font-size: 10px; margin-top: 20px">Design. Code. Repeat.</span></p>
+    	</footer>
+    	
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+			}
+
+			/* Close */
+			function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+			}
+		</script>
+    </body>
+</html>
