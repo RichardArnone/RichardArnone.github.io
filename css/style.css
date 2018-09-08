@@ -376,9 +376,13 @@ nav{
 .expandedWork-images img{
 	width: 100%;
 }
-.expandedWork-images video{
+.squareVid{
 	width: 90%;
 	height: auto;
+}
+.widescreenVid{
+	width: 90%;
+	height: auto;	
 }
 .projectsButton{
 	display: inline;
@@ -660,7 +664,7 @@ footer p{
 		float: right;
 		max-width: 400px;
 	}
-	.expandedWork-images video{
+	.squareVid{
 		width: 40%;
 		height: auto;
 	}
