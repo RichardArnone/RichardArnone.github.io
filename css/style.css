@@ -231,7 +231,7 @@ nav{
 	height: 300px;
 	display: block;
 	background: #222222;
-	background-image: url(../images/1.jpg);
+	background-image: url(../images/mobile/about/slowabout.gif);
 	margin-bottom: 30px;
 }
 #about h1{
@@ -717,7 +717,7 @@ footer p{
 		transform: translateY(-50%); 
 	}
 	#about:hover{
-		background-image: url(../images/test.gif);
+		background-image: url(../images/aboutcolour.gif);
 	}
 	.aboutBlurb{
 		padding-top: 200px;
