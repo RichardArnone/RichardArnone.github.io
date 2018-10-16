@@ -64,10 +64,15 @@ $('a[href*="#"]')
   });
 	
 // Image comparison slider
-// https://www.jqueryscript.net/other/Stylish-jQuery-Images-Comparison-Plugin-twentytwenty.html
-$(".comparison[data-orientation!='vertical']").twentytwenty({
-	default_offset_pct:0.5,
-	no_overlay: true,
-});
+//https://www.jqueryscript.net/other/Image-Comparison-Slider-BeerSlider.html
+  $.fn.BeerSlider = function( options ) {
+    options = options || {};
+    return this.each( function () {
+      new BeerSlider( this, options );
+    });
+  };
+  $( ".beer-slider" ).each( function( index, el ) {
+    $( el ).BeerSlider( {start: $( el ).data( "start" ) } )
+  });
 	
 });

@@ -6,21 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <script src="../js/jquery-2.2.0.min.js"></script>
+		<script src="../js/BeerSlider.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/script.js"></script>
 		<script src="../js/jquery.event.move.js"></script>
-		<script src="../js/jquery.twentytwenty.js"></script>
         
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/twentytwenty.css">
+		<link rel="stylesheet" href="../css/BeerSlider.css">
     </head>
     
     <body>
 
     	<header>
 			<div class="navContain">
-			<a href="../index.html"><img class="logo" src="../images/name.png" alt="Rchard Arnone" width="100px"/></a>
+			<a href="../index.html"><img class="logo" src="../images/name.PNG" alt="Rchard Arnone" width="100px"/></a>
     		<nav id="myNav" class="overlay">  			
     			<div class="overlay-content">
     				<a href="../index.html">HOME</a>
@@ -50,67 +50,53 @@
 		
 			<section class="expandedWork-images">
 				
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/bmw_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/bmw_before.jpg" alt="Before" />
+				<div id="slider-example" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/bmw_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/bmw_after.jpg" alt="After Image">
+						</div>
 				</div>
-				<br><br>
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/mbdealership_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/mbdealership_before.jpg" alt="Before" />
+				
+				<div id="slider1" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/mbdealership_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/mbdealership_after.jpg" alt="After Image">
+						</div>
 				</div>
-				<br><br>
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/steps_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/steps_before.jpg" alt="Before" />
+				
+				<div id="slider2" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/steps_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/steps_after.jpg" alt="After Image">
+						</div>
 				</div>
-				<br><br>
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/arm_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/arm_before.jpg" alt="Before" />
+				
+				<div id="slider3" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/arm_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/arm_after.jpg" alt="After Image">
+						</div>
 				</div>
-				<br><br>
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/hotel_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/hotel_before.jpg" alt="Before" />
+				
+				<div id="slider4" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/hotel_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/hotel_after.jpg" alt="After Image">
+						</div>
 				</div>
-				<br><br>
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/jeep_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/jeep_before.jpg" alt="Before" />
+				
+				<div id="slider5" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/jeep_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/jeep_after.jpg" alt="After Image">
+						</div>
 				</div>
-				<br><br>
-				<div class="labels">
-					<p>&#171; BEFORE</p>
-					<p>AFTER &#187;</p>
-				</div>		
-				<div class="comparison">
-					<img src="../images/expanded/photoshop/plane_after.jpg" alt="After" />
-					<img src="../images/expanded/photoshop/plane_before.jpg" alt="Before" />
+				
+				<div id="slider6" class="beer-slider" data-beer-label="before">
+					<img src="../images/expanded/photoshop/plane_before.jpg" alt="Before Image">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="../images/expanded/photoshop/plane_after.jpg" alt="After Image">
+						</div>
 				</div>
 				
 			</section>
