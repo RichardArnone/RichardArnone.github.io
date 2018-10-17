@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 /* CSS RESET BEGINS */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* CSS RESET ENDS */
@@ -8,7 +9,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	padding: 0;
 	border: 0;
 }
-
+*:focus {
+outline: 0;
+outline: none;
+}
 html, body{
 	height: 100%;
 }
@@ -19,7 +23,7 @@ html{
 /* Body tag styling and positioning. */
 body{
 	background-color: black;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 /* Website container tag. */
 header{
@@ -165,6 +169,12 @@ nav{
 	to{
 		opacity: 1;
 	}
+}
+#intro p{
+	-webkit-animation: peekaboo 7s;
+	animation: peekaboo 7s;
+	color: white;
+	font-weight: 300;
 }
 #description{
 	-webkit-animation: peekaboo 7s;
@@ -394,7 +404,7 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	color: white;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 14px;
 }
 
@@ -407,7 +417,7 @@ footer{
 footer p{
 	margin-top: 20px;
 	color: white;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 14px;
 	text-align: center;
 }
@@ -438,13 +448,13 @@ footer p{
 .aboutBlurb h1{
 	color: white;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 38px;
 	margin-bottom: 15px;
 }
 .aboutBlurb p{
 	color: white;
-	font-weight: 200;
-	line-height: 20px;
+	font-weight: 300;
+	line-height: 25px;
 }
 .blurb{
 	max-width: 1200px;
@@ -459,7 +469,7 @@ footer p{
 }
 .blurb p{
 	color: white;
-	font-weight: 200;
+	font-weight: 300;
 	line-height: 20px;
 }
 .hyperlinks{
@@ -484,10 +494,11 @@ footer p{
 	font-weight: 400;
 	font-size: 30px;
 	margin-bottom: 5px;
+	text-transform: uppercase;
 }
 .skillLeft p, .skillRight p{
 	color: white;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 13px;
 	line-height: 20px;
 }
@@ -523,7 +534,7 @@ footer p{
 #timeline h1{
 	font-size: 28px;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 400;
 	letter-spacing: 2px;
 	color: white;
 }
