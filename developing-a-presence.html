@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Developing a Presence</title>
+        <meta charset="utf-8">
+		<meta name="description" content="Design and Animation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		<script src="js/jquery.enllax.min.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    </head>
+    
+    <body>
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="index.html#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
+		
+		<section id="project-hero">
+			
+			<div class="project-hero-container">
+				
+				<img id="project-image" src="images/projects/8188/hero.jpg" alt="Canon Road Trip" />
+				
+				<a class="text-cta" href="#project-notes">Begin</a>
+				
+				<span id="scroll-line"></span>
+				
+				<div class="project-title">
+					
+					<h1 id="project-heading">Developing a Presence</h1>
+					<h2 id="project-subhead">8188 Yonge</h2>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section id="project-notes">
+			
+			<div class="container">	
+
+				<div id="project-blurb">
+					
+					<div id="left">
+						<p>The developers at 8188 Yonge came to 7 Communications looking for help with their branding. I was tasked with creating the look and feel for their social channels, including static and animated posts.</p>
+					</div>
+					
+					<div id="right">
+						<ul>
+							<li>
+								<h3>Services</h3>
+								<p>Design<br>Animation</p>
+							</li>
+
+							<li>
+								<h3>Tools</h3><p>Photoshop<br>After Effects</p>
+							</li>
+
+							<li>
+								<h3>Year</h3>
+								<p>2020 -<br>2021</p>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section id="image-wall">
+			
+			<!-- Foreground project elements -->
+			<video autoplay loop muted class="project-element" style="max-width: 100%; left: 0%; top: 0%; z-index: 1;">
+				<source src="images/projects/8188/animation-1.mp4">
+				<source src="images/projects/8188/animation-1.ogv">
+				Your browser does not support the video tag.
+			</video>
+			
+			<img class="project-element" style="width: 24%; left: 11%; top: 18%; z-index: 2;" src="images/projects/8188/element-1.png" alt="Instagram Post on iPhone" />
+			
+			<img class="project-element" style="width: 22%; left: 31%; top: 14%; z-index: 2;" src="images/projects/8188/element-2.png" alt="Instagram Post on iPhone" />
+			
+			<video autoplay controls loop muted class="project-element" style="max-width: 100%; left: 0%; top: 45%;">
+				<source src="images/projects/8188/animation-2.mp4">
+				<source src="images/projects/8188/animation-2.ogv">
+				Your browser does not support the video tag.
+			</video>
+			
+			<!-- Background image tiles -->
+			<img class="project-bg" src="images/projects/8188/bg-1.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/8188/bg-2.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/8188/bg-3.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/8188/bg-4.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/8188/bg-5.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/8188/bg-6.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/8188/bg-7.jpg" alt="Background Pattern" />
+		
+		</section>
+		
+		<section id="all-work">
+			<div class="return-container">
+				<a class="text-cta" href="work.html#case-studies">All Work</a>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
+		<script>
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
+		</script>
+		
+    </body>
+</html>

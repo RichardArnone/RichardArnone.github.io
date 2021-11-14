@@ -1,134 +1,151 @@
 <!doctype html>
 <html>
     <head>
-        <title>Richard Arnone - Work</title>
+        <title>Richard Arnone Selected Works</title>
         <meta charset="utf-8">
+		<meta name="description" content="A selection of work by Richard Arnone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <script src="js/jquery-2.2.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
-        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
     </head>
     
     <body>
-
-    	<header>
-			<div class="navContain">
-			<a href="index.html"><img class="logo" src="images/name.PNG" alt="Richard Arnone" width="100px"/></a>
-    		<nav id="myNav" class="overlay">  			
-    			<div class="overlay-content">
-    				<a href="index.html">HOME</a>
-					<a href="about.html">ABOUT</a>
-					<a href="work.html">WORK</a>
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    			</div>
-    		</nav>
-    		<span style="color: white" onclick="openNav()"><img id="hamburger" src="images/hamburger.png" alt="Nagivation Menu" width="20px" /></span>
-            <a href="mailto: richard_arnone@live.com"><img id="mail" src="images/mail.png" alt="Contact Me" width="20px" /></a>
-			</div>
-    	</header>
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="index.html#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
 		
-		<div id="container">
-			<div id="main">
-    	
-		<div class="galleryWrapper">
-			<section class="gallery">
-            
-            	<a href="project/giving-life-to-fitness.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/nova.jpg" alt="Giving Life to Fitness.">
-					<figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Giving Life to Fitness.<br><br><span style="font-weight:200; font-size:14px;">WEB DESIGN<br>&amp; PRINT</span></div>
-				</a>
-                
-				<a href="project/redesigning-luxury.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/brookhouse.jpg" alt="Redesigning Luxury.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Redesigning Luxury.<br><br><span style="font-weight:200; font-size:14px;">WEB DESIGN</span></div>
-                </a>
-                
-                <a href="project/building-a-home-for-a-builder.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/tru.jpg" alt="Building a Home for a Builder.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Building a Home for a Builder.<br><br><span style="font-weight:200; font-size:14px;">CODING<br>&amp; PRINT</span></div>
-                </a>
-                
-                <a href="project/fun-for-the-holidays.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/christmascard.jpg" alt="Fun for the Holidays.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Fun for the Holidays.<br><br><span style="font-weight:200; font-size:14px;">PRINT</span></div>
-                </a>
-                
-                <a href="project/saving-for-a-boat.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/gamru.jpg" alt="Saving for a Boat.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Saving for a Boat.<br><br><span style="font-weight:200; font-size:14px;">PRINT</span></div>
-                </a>
-                
-				<a href="project/ironing-out-the-wrinkles.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/photoshop.gif" alt="Ironing Out the Wrinkles.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Ironing Out the Wrinkles.<br><br><span style="font-weight:200; font-size:14px;">PHOTOSHOP</span></div>
-                </a>
-                
-                <a href="project/animating-holiday-cheer.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/cardthumb.gif" alt="Animating Holiday Cheer.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Animating Holiday Cheer.<br><br><span style="font-weight:200; font-size:14px;">ANIMATION</span></div>
-                </a>
-                
-                <a href="project/start-your-engines.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/lexus.gif" alt="Start Your Engines.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Start Your Engines.<br><br><span style="font-weight:200; font-size:14px;">PRINT</span></div>
-                </a>
-                
-                <a href="project/guiding-the-drive.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/bmwguidebook.jpg" alt="Guiding the Drive.">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Guiding the Drive.<br><br><span style="font-weight:200; font-size:14px;">PRINT</span></div>
-                </a>
-                
-				<a href="project/time-to-get-social.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/socialmedia.jpg" alt="Time to Get Social">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Time to Get Social.<br><br><span style="font-weight:200; font-size:14px;">DIGITAL</span></div>
-                </a>
-                
-                <a href="project/making-a-mockup.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/mockup.jpg" alt="Making a Mockup">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Making a Mockup.<br><br><span style="font-weight:200; font-size:14px;">DIGITAL</span></div>
-				</a>
-                
-                <a href="project/designing-the-evening.html" class="galleryItem">
-                	<img class="galleryImage" src="images/thumbnails/lincoln.jpg" alt="Designing the Evening">
-                    <figcaption class="galleryImage-caption"></figcaption>
-					<div class="galleryImage-caption-text">Designing the Evening.<br><br><span style="font-weight:200; font-size:14px;">PRINT</span></div>
-                </a>
-                
-            </section>
-		</div>
+		<section id="hero">
+			
+			<div class="hero-container">
 				
-							
-		</div>
-		</div>
-    	
-    	<footer id="footer">
-			<p>&copy; Richard Arnone 2018<br><span style="font-weight: 400; font-size: 10px;">Design. Code. Repeat.</span></p>
-    	</footer>
-    	
+				<a class="text-cta" href="#case-studies">Explore My Work</a>
+				
+				<span id="scroll-line"></span>
+				
+				<img id="work-hero" src="images/laptop.gif" alt="Richard Arnone"/>
+				
+				<div class="page-title">
+					
+					<h1 id="title-top-row">Selected</h1>
+					<h1 id="title-bottom-row">Works</h1>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section id="case-studies">
+		
+			<div id="p-container">
+				
+				<!-- PROJECT START -->
+				<div class="p-block">
+					<img class="thumb" src="images/projects/bmwpreferred/hero.jpg" alt="BMW i8">
+					<a href="bmw-preferred-website.html">
+						<div class="overlay">
+							<h2>BMW Preferred Program</h2>
+							<h3>BMW Canada</h3>
+						</div>
+					</a>
+				</div>
+				<!-- PROJECT END -->
+				
+				<!-- PROJECT START -->
+				<div class="p-block">
+					<img class="thumb" src="images/projects/mysteryshopper/hero.jpg" alt="Speech Bubbles">
+					<a href="mystery-shopper-report.html">
+						<div class="overlay">
+							<h2>Mystery Shopper Report</h2>
+							<h3>RAPID RTC</h3>
+						</div>
+					</a>
+				</div>
+				<!-- PROJECT END -->
+				
+				<!-- PROJECT START -->
+				<div class="p-block">
+					<img class="thumb" src="images/projects/canonroadtrip/hero.jpg" alt="Truck on the Road">
+					<a href="canon-road-trip.html">
+						<div class="overlay">
+							<h2>Canon Road Trip</h2>
+							<h3>Canon Canada</h3>
+						</div>
+					</a>
+				</div>
+				<!-- PROJECT END -->
+				
+				<!-- PROJECT START -->
+				<div class="p-block">
+					<img class="thumb" src="images/projects/canonfutures/hero.jpg" alt="Man on Beach">
+					<a href="canon-futures.html">
+						<div class="overlay">
+							<h2>Canon Futures</h2>
+							<h3>Canon Canada</h3>
+						</div>
+					</a>
+				</div>
+				<!-- PROJECT END -->
+				
+				<!-- PROJECT START -->
+				<div class="p-block">
+					<img class="thumb" src="images/projects/8188/hero.jpg" alt="8188 Yonge Rendering">
+					<a href="developing-a-presence.html">
+						<div class="overlay">
+							<h2>Developing a Presence</h2>
+							<h3>8188 Yonge</h3>
+						</div>
+					</a>
+				</div>
+				<!-- PROJECT END -->
+				
+				<!-- PROJECT START -->
+				<div class="p-block">
+					<img class="thumb" src="images/projects/logoreel/hero.jpg" alt="After Effects Timeline">
+					<a href="logo-animation-reel.html">
+						<div class="overlay">
+							<h2>Logo Animation Reel</h2>
+							<h3>Various</h3>
+						</div>
+					</a>
+				</div>
+				<!-- PROJECT END -->
+				
+			</div>
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
 		<script>
-			function openNav() {
-				document.getElementById("myNav").style.height = "100%";
-			}
-
-			/* Close */
-			function closeNav() {
-				document.getElementById("myNav").style.height = "0%";
-			}
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
 		</script>
+		
     </body>
 </html>

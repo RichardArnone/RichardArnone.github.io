@@ -3,74 +3,160 @@
     <head>
         <title>Richard Arnone</title>
         <meta charset="utf-8">
+		<meta name="description" content="The portfolio of Richard Arnone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <script src="js/jquery-2.2.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/script.js"></script>
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
     </head>
     
     <body>
-
-    	<header>
-			<div class="navContain">
-    		<nav id="myNav" class="overlay">  			
-    			<div class="overlay-content">
-    				<a href="index.html">HOME</a>
-					<a href="about.html">ABOUT</a>
-					<a href="work.html">WORK</a>
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    			</div>
-    		</nav>   		
-    		<span style="color: white" onclick="openNav()"><img id="hamburger" src="images/hamburger.png" alt="Nagivation Menu" width="20px" /></span>
-            <a href="mailto: richard_arnone@live.com"><img id="mail" src="images/mail.png" alt="Contact Me" width="20px" /></a>
-			</div>
-    	</header>
-    	
-    	<section id="intro">
-    		<div id="title">
-    			<img id="name" src="images/name.png" alt="Richard Arnone"/>
+		
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
+		
+		<section id="hero">
+			
+			<div class="hero-container">
 				
-				<div id="description">
-					<h1>Graphic Designer</h1>
-					<h1>Front-End Developer</h1><br><br>			
-				</div>
-                <center><p>I design to inspire those around me.</p></center>
-                <div class="nextButton">
-					<a class="nextArrow" href="#gifButtons">&#187;</a>
-				</div>
-    		</div>
-    		
-    	</section>
-
-    	<section id="gifButtons">
-				<div id="options">
-					<a href="about.html"><div id="about">
-						<h1>ABOUT</h1>
-					</div></a>
+				<a class="text-cta" href="#blurb">Check me out</a>
+				
+				<span id="scroll-line"></span>
+				
+				<img id="me-hero" src="images/me.png" alt="Richard Arnone"/>
+				
+				<div class="page-title">
 					
-					<a href="work.html"><div id="work">
-						<h1>WORK</h1>
-					</div></a>
+					<h1 id="title-top-row">Richard</h1>
+					<h1 id="title-bottom-row">Arnone</h1>
+					
 				</div>
-    	</section>
-    	
-    	<footer>
-			<p>&copy; Richard Arnone 2018<br><span style="font-weight: 400; font-size: 10px; margin-top: 20px">Design. Code. Repeat.</span></p>
-    	</footer>
-    	
-		<script>
-			function openNav() {
-				document.getElementById("myNav").style.height = "100%";
-			}
+				
+			</div>
+			
+		</section>
+		
+		<section id="blurb">
 
-			/* Close */
-			function closeNav() {
-				document.getElementById("myNav").style.height = "0%";
-			}
+			<div class="container">	
+				
+				<div id="blurb-wrapper">
+					<h1><span style="text-decoration: line-through; text-decoration-color: #f1b707; text-decoration-thickness: 10px;">Hey</span> is for horses...</h1>
+
+					<p>Hello, my name is Richard Arnone. I am a designer
+					from Toronto, Canada. I aspire to excite through thoughtful and compelling design.</p>
+
+					<a class="text-cta" href="work.html">Skip To My Work</a>
+					
+				</div>
+
+			</div>
+		
+		</section>
+		
+		<section id="skills">
+
+			<div class="container">	
+				
+				<h1>The guy behind the screen</h1>
+				
+				<div id="skill-block-wrapper">
+					
+					<p style="max-width: 800px">A self motivated team player, with a keen eye for design and a honed vision for user interaction.</p>
+				
+					<div class="skill-block">
+						<h3>01</h3>
+						<h2>Graphic Design</h2>
+						<p>From print to digital, static to motion, simple to complex, I thrive in an environment that challenges me to problem solve and create excellence. Forever a student at my craft, always learning, always improving.</p>
+					</div>
+
+					<div class="skill-block">
+						<h3>02</h3>
+						<h2>Front-End Development</h2>
+						<p>Developing various websites, landing pages and email communications has allowed me to sharpen my skills in HTML5, CSS3, Java Script, jQuery and various content management systems.</p>
+					</div>
+
+					<div class="skill-block">
+						<h3>03</h3>
+						<h2>Communication</h2>
+						<p>I love to interact and share ideas with people in all aspects of my life. Communication is one of the most important tools in the belt of a designer. Knowing how to use it is key in understanding, not only your clients' needs, but the needs of your team and how to support them.</p>
+					</div>
+
+					<div class="skill-block">
+						<h3>04</h3>
+						<h2>Team Oriented</h2>
+						<p>Always laughing when given the chance but also knowing when to roll up my sleeves and put in work. I am a people person at heart and love being an active participant in the culture of my workplace.</p>
+					</div>
+					
+				</div>
+				
+				<img id="me-break" src="images/aboutme-image-cropped.jpg" alt="Richard Arnone"/>
+				
+				<div id="brand-list-wrapper">
+					
+					<h1>Brands I've Helped</h1>
+					
+					<p style="max-width: 800px">I'd love to talk to you about how I can help your brand as well.</p>
+					
+					<div class="gif-data">
+						<img class="teaser" style="display: none;" src="images/bmwteaser.gif" alt="BMW Brand Teaser" />
+						<img class="teaser" style="display: none;" src="images/canonteaser.gif" alt="Canon Brand Teaser" />
+						<img class="teaser" style="display: none;" src="images/hdteaser.gif" alt="Harley-Davidson Brand Teaser" />
+						<img class="teaser" style="display: none;" src="images/sephorateaser.gif" alt="Sephora Brand Teaser" />
+						<img class="teaser" style="display: none;" src="images/lamboteaser.gif" alt="Lamborghini Brand Teaser" />
+					</div>
+				
+					<div id="brand-list">
+						<ul>
+							<li class="play-teaser">BMW</li>
+							<li class="play-teaser">Canon</li>
+							<li class="play-teaser">Harley-Davidson</li>
+							<li class="play-teaser">Sephora</li>
+							<li class="play-teaser">Lamborghini</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				
+				<a class="text-cta" href="assets/RichardArnoneResume2021.pdf" target="_blank">Need My Resume?</a>
+
+			</div>
+			
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
+		<script>
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
 		</script>
+		
     </body>
 </html>

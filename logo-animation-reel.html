@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logo Animation Reel</title>
+        <meta charset="utf-8">
+		<meta name="description" content="Storyboarding and Design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		<script src="js/jquery.enllax.min.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    </head>
+    
+    <body>
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="index.html#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
+		
+		<section id="project-hero">
+			
+			<div class="project-hero-container">
+				
+				<img id="project-image" src="images/projects/logoreel/hero.jpg" alt="Mystery Shopper Report" />
+				
+				<a class="text-cta" href="#project-notes">Begin</a>
+				
+				<span id="scroll-line"></span>
+				
+				<div class="project-title">
+					
+					<h1 id="project-heading">Logo Animation Reel</h1>
+					<h2 id="project-subhead">Various</h2>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section id="project-notes">
+			
+			<div class="container">	
+
+				<div id="project-blurb">
+					
+					<div id="left">
+						<p>Included here is a reel of various logo animations I have storyboarded and animated. All logos were created and designed by Anwar Mustafa, Creative Director at 7 Communications.</p>
+					</div>
+					
+					<div id="right">
+						<ul>
+							<li>
+								<h3>Services</h3>
+								<p>Storyboarding<br>Animation</p>
+							</li>
+
+							<li>
+								<h3>Tools</h3><p>After Effects<br>Photoshop<br>Illustrator</p>
+							</li>
+
+							<li>
+								<h3>Year</h3>
+								<p>2019 -<br>Present</p>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section id="image-wall">
+			
+			<!-- Foreground project elements -->		
+			<video autoplay controls loop muted class="project-bg" style="max-width: 100%;">
+				<source src="images/projects/logoreel/animation.mp4">
+				<source src="images/projects/mysteryshopper/animation.ogv">
+				Your browser does not support the video tag.
+			</video>
+		
+		</section>
+		
+		<section id="all-work">
+			<div class="return-container">
+				<a class="text-cta" href="work.html#case-studies">All Work</a>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
+		<script>
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
+		</script>
+		
+    </body>
+</html>

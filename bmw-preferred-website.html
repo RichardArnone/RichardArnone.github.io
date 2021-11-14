@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BMW Preferred Program</title>
+        <meta charset="utf-8">
+		<meta name="description" content="Wireframing, Strategy, Design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		<script src="js/jquery.enllax.min.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    </head>
+    
+    <body>
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="index.html#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
+		
+		<section id="project-hero">
+			
+			<div class="project-hero-container">
+				
+				<img id="project-image" src="images/projects/bmwpreferred/hero.jpg" alt="BMW Preferred Program" />
+				
+				<a class="text-cta" href="#project-notes">Begin</a>
+				
+				<span id="scroll-line"></span>
+				
+				<div class="project-title">
+					
+					<h1 id="project-heading">BMW Preferred Program</h1>
+					<h2 id="project-subhead">BMW Canada</h2>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section id="project-notes">
+			
+			<div class="container">	
+
+				<div id="project-blurb">
+					
+					<div id="left">
+						<p>As a Designer at 7 Communications I was tasked with designing a client portal for potential BMW customers. These customers were given the opportunity to test drive the BMW vehicles of their choice for a desired length of time. The users path was structured with ease and simplicity in mind while complying with BMW's brand guidelines.</p>
+					</div>
+					
+					<div id="right">
+						<ul>
+							<li>
+								<h3>Services</h3>
+								<p>Wireframing<br>Strategy<br>Design</p>
+							</li>
+
+							<li>
+								<h3>Tools</h3><p>Photoshop<br>Illustrator</p>
+							</li>
+
+							<li>
+								<h3>Year</h3>
+								<p>2019</p>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section id="image-wall">
+			
+			<!-- Foreground project elements -->
+			<img class="project-element" data-enllax-ratio=".075" data-enllax-type="foreground" data-enllax-direction="horizontal" style="width: 80%; left: 8%; top: 1%;" src="images/projects/bmwpreferred/element-1.png" alt="Dashboard on Macbook" />
+			
+			<img class="project-element" data-enllax-ratio="-.075" data-enllax-type="foreground" data-enllax-direction="horizontal" style="width: 29%; left: 60%; top: 9%;" src="images/projects/bmwpreferred/element-2.png" alt="Program Area on iPhone" />
+			
+			<img class="project-element" data-enllax-ratio="-.075" data-enllax-type="foreground" data-enllax-direction="horizontal" style="width: 60%; left: 28%; top: 33%;" src="images/projects/bmwpreferred/element-4.png" alt="Program Area on iPhone" />
+			
+			<img class="project-element" data-enllax-ratio=".075" data-enllax-type="foreground" data-enllax-direction="horizontal" style="width: 60%; left: 4%; top: 47%;" src="images/projects/bmwpreferred/element-3.png" alt="Program Area on iPhone" />
+			
+			<img class="project-element" data-enllax-ratio="-.075" data-enllax-type="foreground" data-enllax-direction="horizontal" style="width: 47%; left: 46%; top: 72%;" src="images/projects/bmwpreferred/element-5.png" alt="Program Area on iPhone" />
+			
+			<!-- Background image tiles -->
+			<img class="project-bg" src="images/projects/bmwpreferred/bg-1.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/bmwpreferred/bg-2.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/bmwpreferred/bg-3.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/bmwpreferred/bg-4.jpg" alt="Background Pattern" />
+		
+		</section>
+		
+		<section id="all-work">
+			<div class="return-container">
+				<a class="text-cta" href="work.html#case-studies">All Work</a>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
+		<script>
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
+		</script>
+		
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Canon Futures</title>
+        <meta charset="utf-8">
+		<meta name="description" content="Wireframing, Design and Animation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		<script src="js/jquery.enllax.min.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    </head>
+    
+    <body>
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="index.html#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
+		
+		<section id="project-hero">
+			
+			<div class="project-hero-container">
+				
+				<img id="project-image" src="images/projects/canonfutures/hero.jpg" alt="Canon Road Trip" />
+				
+				<a class="text-cta" href="#project-notes">Begin</a>
+				
+				<span id="scroll-line"></span>
+				
+				<div class="project-title">
+					
+					<h1 id="project-heading">Canon Futures</h1>
+					<h2 id="project-subhead">Canon Canada</h2>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section id="project-notes">
+			
+			<div class="container">	
+
+				<div id="project-blurb">
+					
+					<div id="left">
+						<p>Canon Futures is Canon Canada’s first-ever creative incubator. Futures is a 12-month, all expenses paid mentorship for 20 applicants who are selected by Canon to participate. As a designer at 7 Communications, I was tasked with wireframing and designing the application landing page as well as designing and animating social media assets to promote this program.</p>
+					</div>
+					
+					<div id="right">
+						<ul>
+							<li>
+								<h3>Services</h3>
+								<p>Wireframing<br>Design<br>Animation</p>
+							</li>
+
+							<li>
+								<h3>Tools</h3><p>Photoshop<br>Adobe XD<br>After Effects<br>Illustrator</p>
+							</li>
+
+							<li>
+								<h3>Year</h3>
+								<p>2021</p>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section id="image-wall">
+			
+			<!-- Foreground project elements -->
+			<video autoplay loop muted class="project-element" style="max-width: 100%; left: 0%; top: 0%; z-index: 1;">
+				<source src="images/projects/canonfutures/animation-1.mp4">
+				<source src="images/projects/canonfutures/animation-1.ogv">
+				Your browser does not support the video tag.
+			</video>
+			
+			<img class="project-element" style="width: 100%; left: 0%; top: 0%; z-index: 2;" src="images/projects/canonfutures/element-1.png" alt="Application Website on MacBook" />
+			
+			<video autoplay loop muted style="position: absolute; max-width: 100%; left: 0%; top: 31%;">
+				<source src="images/projects/canonfutures/animation-2.mp4">
+				<source src="images/projects/canonfutures/animation-2.ogv">
+				Your browser does not support the video tag.
+			</video>
+			
+			<video autoplay loop muted class="project-element" style="max-width: 100%; left: 0%; top: 80%;">
+				<source src="images/projects/canonfutures/animation-3.mp4">
+				<source src="images/projects/canonfutures/animation-3.ogv">
+				Your browser does not support the video tag.
+			</video>
+			
+			<!-- Background image tiles -->
+			<img class="project-bg" src="images/projects/canonfutures/bg-1.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/canonfutures/bg-2.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/canonfutures/bg-3.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/canonfutures/bg-4.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/canonfutures/bg-5.jpg" alt="Background Pattern" />
+			<img class="project-bg" src="images/projects/canonfutures/bg-6.jpg" alt="Background Pattern" />
+		
+		</section>
+		
+		<section id="all-work">
+			<div class="return-container">
+				<a class="text-cta" href="work.html#case-studies">All Work</a>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
+		<script>
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
+		</script>
+		
+    </body>
+</html>
