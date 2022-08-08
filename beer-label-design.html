@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Beer Label Design</title>
+        <meta charset="utf-8">
+		<meta name="description" content="Storyboarding and Design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+		<script src="js/fadeInScroll.jQuery.js"></script>
+		<script src="js/jquery.enllax.min.js"></script>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    </head>
+    
+    <body>
+		<header>
+			<a href="index.html"><img src="images/ra-logo.svg" width="50px;" alt="Richard Arnone"/></a>
+			<ul id="nav">
+				<li><a href="index.html#blurb">About</a></li>
+				<li><a href="work.html">Work</a></li>
+			</ul>
+		</header>
+		
+		<section id="project-hero">
+			
+			<div class="project-hero-container">
+				
+				<img id="project-image" src="images/projects/ganaraska/hero.jpg" alt="Mystery Shopper Report" />
+				
+				<a class="text-cta" href="#project-notes">Begin</a>
+				
+				<span id="scroll-line"></span>
+				
+				<div class="project-title">
+					
+					<h1 id="project-heading">Beer Label Design</h1>
+					<h2 id="project-subhead">Ganaraska Brewing Company</h2>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+		<section id="project-notes">
+			
+			<div class="container">	
+
+				<div id="project-blurb">
+					
+					<div id="left">
+						<p>I was connected with Ganaraska Brewing Company through a mutual contact who informed me they were in need of a refresh. The client wanted to utilize a comic book/cartoon style for their label artwork. I began conceptualizing how their current labels could take on a new identity while opening the door for future labels to follow suit. The client was thrilled with the turn out of the labels, prompting an on-going, working relationship that remains to this day. Below you can explore the labels themselves as well as some applications of the illustrated artwork.</p>
+					</div>
+					
+					<div id="right">
+						<ul>
+							<li>
+								<h3>Services</h3>
+								<p>Ideation<br>Illustration<br>Animation</p>
+							</li>
+
+							<li>
+								<h3>Tools</h3><p>After Effects<br>Illustrator<br>Photoshop</p>
+							</li>
+
+							<li>
+								<h3>Year</h3>
+								<p>2021 -<br>Present</p>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section id="image-wall">
+			
+			<!-- Foreground project elements -->		
+			<video autoplay controls loop muted class="project-bg" style="max-width: 100%;">
+				<source src="images/projects/ganaraska/beer-label-promo-reel-2.mp4">
+				Your browser does not support the video tag.
+			</video>
+			
+			<!-- Background image tiles -->
+			<img class="project-bg" src="images/projects/ganaraska/g-1.jpg" alt="Core Drinks" />
+			<img class="project-bg" src="images/projects/ganaraska/g-2.jpg" alt="Merch" />
+			<img class="project-bg" src="images/projects/ganaraska/g-3.jpg" alt="One Offs" />
+		
+		</section>
+		
+		<section id="all-work">
+			<div class="return-container">
+				<a class="text-cta" href="work.html#case-studies">All Work</a>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="footer-wrapper">
+				<h1>Hit me up!</h1>
+				<div id="my-email"><a href="mailto:richard_arnone@live.com?subject=Let's do something awesome!">richard_arnone@live.com</a></div>
+				<p>Let's do something awesome together.</p>
+				<p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Richard Arnone</p>
+			</div>
+		</footer>
+		
+		<script>
+			const cursor = document.querySelector('.gif-data');
+			
+			document.addEventListener('mousemove', e => {
+				cursor.setAttribute("style", "top: "+(e.pageY - 250)+"px; left: "+(e.pageX - 200)+"px;")
+			})
+		
+		</script>
+		
+    </body>
+</html>
