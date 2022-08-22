@@ -573,6 +573,22 @@ p{
 #left{
 	font-size: .75em;
 }
+#left a{
+	color: #f1b707;
+	text-decoration: none;
+	opacity: 1;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#left a:hover{
+	opacity: .5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
 
 #project-blurb ul{
 	
